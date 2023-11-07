@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block title %}
+     : Resume
+{% endblock %}
+
+{% block ul %}
+<li><a class="nav-link" href="/">Home</a></li>
+<li><a class="nav-link" href="/about">About</a></li>
+<li><a class="nav-link active" href="/resume">Resume</a></li>
+<li><a class="nav-link" href="/portfolio">Portfolio</a></li>
+<li><a class="nav-link" href="/contact">Contact</a></li>
+{% endblock %}
+
+{% block main %}
+<section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Viraj Ajani</h4>
+            <p><em>I am deeply passionate about Computer Vision and have already acquired a strong skill set. I firmly
+                believe that real-world experience is the key to bridging the gap between theory and practice.</em></p>
+            <p>
+            <ul>
+              <li>Rajkot-360003, India</li>
+              <li>virajajani007@gmail.com</li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          
+          <div class="resume-item">
+            <h4>B.Tech CSE (Artificial Intelligence)</h4>
+            <h5>2020 - 2024</h5>
+            <p><em>ITM (sls) Baroda University, Baroda, India<br>
+              09/2020 - Present</em></p>
+            <!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
+          </div>
+          <h3 class="resume-title">Achievements</h3>
+          <div class="resume-item">
+            <h4>Winner, Codethon-2022</h4>
+            <p><em>University-level codethon at ITM (sls) Baroda University. </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>First Runner-up, Codethon-2022</h4>
+            <p><em>Inter University-level codethon at Prakarsh, SVIT, Vasad. </em></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Projects</h3>
+          <div class="resume-item">
+            <h4>Symptomite</h4>
+            <!-- <h5>2020 -2021</h5> -->
+            <p><em>Diesease Prediction System </em></p>
+            <p>
+            <ul>
+              <li>Build models to predict diesease using decision tree and KNN.</li>
+              <li>Optimize the model built by fellow teammates. </li>
+              <li>Contributed to building backend of website using flask.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>ERP website</h4>
+            <!-- <h5>2020-2021</h5> -->
+            <p><em>ERP website for wholesalers in kankotri industry</em></p>
+            <p>
+            <ul>
+              <li>Implemented website by using standard HTML/CSS practices.</li>
+              <li>Used Flask to develop backend of the website.</li>
+              <li>Gathered specifications and requirements of the user so that evey user can easily use the website.</li>
+              <li>Built a website to check weather a particular item from given catlog is currently available to wholesalers or not.</li>
+            </ul>
+            </p>
+          </div>
+          
+      </div>
+      <br>
+      <form action="/resume" method="post">
+        <div class="text-center">
+            <button> Download Resume </button>
+        </div>
+    </form>
+    </div>
+</section>
+{% endblock %}

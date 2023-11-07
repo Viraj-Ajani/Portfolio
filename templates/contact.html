@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}
+     : Contact
+{% endblock %}
+
+{% block head %}
+<!-- Emailjs -->
+<script src="./static/emailjs.js"></script>
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_kg2cjOzt7PsCPRUmXP60k");
+})();
+</script>
+{% endblock %}
+
+{% block ul %}
+<li><a class="nav-link" href="/">Home</a></li>
+<li><a class="nav-link" href="/about">About</a></li>
+<li><a class="nav-link" href="/resume">Resume</a></li>
+<li><a class="nav-link" href="/portfolio">Portfolio</a></li>
+<li><a class="nav-link active" href="/contact">Contact</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Me</p>
+          </div>
+    
+          <div class="row mt-2">
+    
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>My Address</h3>
+                <p>Opp. RTO, Rajkot-360003, India.</p>
+              </div>
+            </div>
+    
+            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bx-share-alt"></i>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="https://github.com/Viraj-Ajani" class="github"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/viraj-ajani/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Me</h3>
+                <p> <a href="mailto:virajajani007@gmail.com"> virajajani007@gmail.com</a></p>
+              </div> 
+            </div>
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+              <div class="info-box">
+                <i class="bx bxl-linkedin"></i>
+                <h3>Ping Me</h3>
+                <p> <a href="https://www.linkedin.com/in/viraj-ajani/">Connnect with me on LinkedIn.</a> </p>
+              </div>
+            </div>
+          </div>
+        <br>
+          <div  class="php-email-form mt-4">
+            <div class="section-title">
+              <h2>message me</h2>
+              <p>Message Me</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="from_name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="your_email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button onclick="sendMail()">Send Message</button></div>
+          </div>
+    
+        </div>
+    </section>
+{% endblock %}

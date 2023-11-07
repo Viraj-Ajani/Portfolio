@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block title %}
+     : Portfolio
+{% endblock %}
+
+{% block ul %}
+<li><a class="nav-link" href="/">Home</a></li>
+<li><a class="nav-link" href="/about">About</a></li>
+<li><a class="nav-link" href="/resume">Resume</a></li>
+<li><a class="nav-link active" href="/portfolio">Portfolio</a></li>
+<li><a class="nav-link" href="/contact">Contact</a></li>
+{% endblock %}
+
+{% block main %}
+    <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Projects</p>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="static/Symptomite.png" class="img-fluid" alt="">
+            <a href="https://disease-prediction-system-ovsk.onrender.com/"> 
+            <div class="portfolio-info">
+              <h4>Symptomite</h4>
+              <p>Diesease Prediction System</p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="static/cars.jpeg" class="img-fluid" alt="">
+            <a href="https://drive.google.com/drive/folders/1ihBzEq4WEalsc872EHIxJR8Rfvwpgx9t">
+            <div class="portfolio-info">
+              <h4>Object Detection</h4>
+              <p>Cars</p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="static/image segmentation.jpg" class="img-fluid" alt="">
+            <a href="https://drive.google.com/drive/folders/1_m6faCOZDX8klhRu4BrLXRN7PPm5VVoL">
+            <div class="portfolio-info">
+              <h4>Image Segmentation</h4>
+              <p>Human</p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="static/image classification.jpeg" class="img-fluid" alt="">
+            <a href="https://drive.google.com/drive/folders/1zQhbx3CrtILhrgn3d8qY9ifu9k8DKLqp"> 
+            <div class="portfolio-info">
+              <h4>Image Classification </h4>
+              <p>Cifar-10 and mnist</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <h3>Other Projects : </h3>
+        <p class="font-italic">
+        ERP website for wholesalers in Kankotri industry.<br>
+        Sales price Prediction based on advertising budget.<br>
+        Research Internship at SIT on Solar Power Prediction.<br>
+        </p>
+      </div>
+      </div>
+    </section>
+
+{% endblock %}
