@@ -25,16 +25,6 @@ def about():
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
-    # if request.method == "POST":
-    #     name = request.form.get("name")
-    #     email = request.form.get("email")
-    #     subject = request.form.get("subject")
-    #     message = request.form.get("messgae")
-    #     if not (name or email or message):
-    #         pass
-    #     msg = Message(subject=subject, sender = email, recipients = ['virajajani007@gmail.com'])
-    #     msg.body = message+"\nBest Regards,\n"+name
-    #     mail.send(msg)
     return render_template("contact.html")
 
 @app.route("/portfolio", methods=["GET", "POST"])
