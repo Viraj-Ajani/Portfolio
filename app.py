@@ -39,4 +39,5 @@ def resume():
         return response
     return render_template("resume.html")
 
-app.run()
+if __name__ == "__main__":
+    app.run()
